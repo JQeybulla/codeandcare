@@ -13,12 +13,14 @@ export default function HeaderComponent () {
       </div>
 
       <div className={styles.menu}>
-        <p>Tədris istiqamətləri</p>
-        <p>Haqqımızda</p>
-        <p>Xəbərlər</p>
-        <p>Blog</p>
-        <p>Əlaqə</p>
-        <button>Müraciət et</button>
+          <Link href='/directions'><p>Tədris istiqamətləri</p></Link>
+          <Link href='/about-us'><p>Haqqımızda</p></Link>
+          <Link href='/news'><p>Xəbərlər</p></Link>
+          <Link href='/blogs'><p>Blog</p></Link>
+          <Link href='/contact-us'><p>Əlaqə</p></Link>
+          <Link href='/apply'>
+              <button>Müraciət et</button>
+          </Link>
       </div>
     </div>
   )

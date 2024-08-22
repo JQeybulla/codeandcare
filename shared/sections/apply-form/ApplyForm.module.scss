@@ -25,6 +25,8 @@
       padding: 8px 16px;
       font-size: 16px;
       outline: none;
+      background-color: #ffffff;
+      color: #4c4c4c;
     }
 
     select {
@@ -34,8 +36,11 @@
       padding: 8px 16px;
       font-size: 16px;
       outline: none;
+      background-color: #ffffff;
+      color: #4c4c4c;
       option {
         height: 4px;
+        background-color: #4c4c4c !important;
       }
       option:first-child {
         border-radius: 8px !important;

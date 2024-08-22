@@ -13,7 +13,6 @@ export default function Home() {
       <DirectionsComponent />
       <ApplyFormComponent />
       <PartnersComponent />
-      <FooterComponent />
     </>
   );
 }

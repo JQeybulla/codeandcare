@@ -9,7 +9,7 @@ const exo_2 = Exo_2({
 
 export default function ApplyFormComponent() {
   return (
-    <div className={styles.applyForm}>
+    <div className={styles.applyForm} id='apply-form'>
       <h1 className={exo_2.className}>Müraciət formu</h1>
       <form>
         <select>

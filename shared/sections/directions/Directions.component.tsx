@@ -8,7 +8,7 @@ const exo_2 = Exo_2({
 
 export default function DirectionsComponent() {
   return (
-    <div className={styles.directions}>
+    <div className={styles.directions} id='directions'>
       <h1 className={exo_2.className}>Tədris istiqamətləri</h1>
       <div className={`${styles.container} ${exo_2.className}`}>
         <div className={styles.direction}>
