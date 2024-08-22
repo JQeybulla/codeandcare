@@ -2,7 +2,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import './Carousel.component.scss';
 import Autoplay from "embla-carousel-autoplay";
-import carouselImage from './../../public/images/carousel/landing.svg';
+import carouselImage from './../../public/images/carousel/Frame 12.svg';
 import Image from "next/image";
 
 export default function CarouselComponent() {

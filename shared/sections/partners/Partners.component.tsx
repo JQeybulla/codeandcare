@@ -1,8 +1,13 @@
 'use client'
-import './Partners.component.scss';
+import styles from './Partners.module.scss';
 import {Exo_2} from "next/font/google";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
+import yashat from './../../../public/images/Yashat.svg';
+import bhos from './../../../public/images/bhos.svg';
+import ucode from './../../../public/ucode .svg'
+import secop from './../../../public/secop logo.svg';
+import aastudio from './../../../public/aa studio logo.svg';
+import magaz from './../../../public/magistratiraaz.svg';
+import Image from "next/image";
 
 const exo_2 = Exo_2({
   weight: ['500', '700'],
@@ -10,21 +15,21 @@ const exo_2 = Exo_2({
 });
 
 export default function PartnersComponent() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay()]);
   return (
-    <div className='partners'>
+    <div className={styles.partners}>
       <h1 className={exo_2.className}>Partnyorlarımız</h1>
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container">
-          <div className="embla__slide">
-            test
-          </div>
-          <div className="embla__slide">
-            test
-          </div>
-          <div className="embla__slide">
-            test
-          </div>
+      <div className={styles.container}>
+        <div className={styles.partner}>
+          <Image src={ucode} alt='yashat' />
+        </div>
+        <div className={styles.partner}>
+          <Image src={secop} alt='yashat' />
+        </div>
+        <div className={styles.partner}>
+          <Image src={aastudio} alt='yashat' />
+        </div>
+        <div className={styles.partner}>
+          <Image src={magaz} alt='yashat' />
         </div>
       </div>
     </div>

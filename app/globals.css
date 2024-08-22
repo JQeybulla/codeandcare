@@ -82,7 +82,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -107,4 +107,32 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+
+/* Hide scrollbar (optional) */
+body::-webkit-scrollbar {
+  /*display: none;*/
+}
+
+/* Width of the scrollbar */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track (background) */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle (thumb) */
+body::-webkit-scrollbar-thumb {
+  background: #7ed957;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #7ed957;
 }
