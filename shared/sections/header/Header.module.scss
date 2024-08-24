@@ -23,6 +23,9 @@
     //border: 1px solid red;
     align-items: center;
     gap: 3rem;
+    .active {
+      color: #7ed957;
+    }
 
     p {
       font-weight: 500;
@@ -55,3 +58,5 @@
     }
   }
 }
+
+

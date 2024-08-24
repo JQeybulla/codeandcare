@@ -1,0 +1,35 @@
+.frontend {
+  padding: 3rem 10rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  h3 {
+    margin: 2rem 0 1rem 0;
+  }
+  ul {
+    padding: 0 1rem;
+    li {
+      margin: 5px 0;
+    }
+  }
+  button {
+    //height: 50px;
+    //width: 100px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 14px;
+    background-color: #7ed957;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #7ed957;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-family: sans-serif;
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+}

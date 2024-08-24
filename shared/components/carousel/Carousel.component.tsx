@@ -4,6 +4,7 @@ import './Carousel.component.scss';
 import Autoplay from "embla-carousel-autoplay";
 import carouselImage from '../../../public/images/carousel/Frame 12.svg';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CarouselComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay()]);
@@ -14,7 +15,9 @@ export default function CarouselComponent() {
           <div className="left">
             <div className="middle">
               <h1>Gələcəyin <span>kodunu</span> <span>yazmağa</span> tələs!</h1>
-              <button>Ətraflı</button>
+              <Link href={'/directions'}>
+                <button>Ətraflı</button>
+              </Link>
             </div>
           </div>
           <div className="right">

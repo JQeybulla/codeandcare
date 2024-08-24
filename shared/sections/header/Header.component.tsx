@@ -1,9 +1,14 @@
+'use client';
 import styles from './Header.module.scss';
 import Image from "next/image";
 import logo from './../../../public/CODE.svg';
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
+
 
 export default function HeaderComponent () {
+  const pathname = usePathname();
+  console.log(pathname)
   return (
     <div className={styles.header}>
       <div className={styles.logo}>
@@ -13,11 +18,11 @@ export default function HeaderComponent () {
       </div>
 
       <div className={styles.menu}>
-          <Link href='/directions'><p>Tədris istiqamətləri</p></Link>
-          <Link href='/about-us'><p>Haqqımızda</p></Link>
-          <Link href='/news'><p>Xəbərlər</p></Link>
-          <Link href='/blogs'><p>Blog</p></Link>
-          <Link href='/contact-us'><p>Əlaqə</p></Link>
+          <Link href='/directions'><p className={`${pathname === '/directions' ? styles.active : ''}`}>Tədris istiqamətləri</p></Link>
+          <Link href='/about-us'><p className={`${pathname === '/about-us' ? styles.active : ''}`}>Haqqımızda</p></Link>
+          {/*<Link href='/news'><p className={`${pathname === '/news' ? styles.active : ''}`}>Xəbərlər</p></Link>*/}
+          <Link href='/blogs'><p className={`${pathname === '/blogs' ? styles.active : ''}`}>Blog</p></Link>
+          <Link href='/contact-us'><p className={`${pathname === '/contact-us' ? styles.active : ''}`}>Əlaqə</p></Link>
           <Link href='/apply'>
               <button>Müraciət et</button>
           </Link>
