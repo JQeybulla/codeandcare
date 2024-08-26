@@ -3,6 +3,10 @@ import logo from './../../../public/CODE.svg';
 import Image from "next/image";
 import {Exo_2} from "next/font/google";
 import Link from "next/link";
+import insta from './../../../public/instagram-logo.svg'
+import face from './../../../public/facebook-f.png';
+import linkedin from './../../../public/fi-xnsuxx-linkedin.png';
+
 
 const exo_2 = Exo_2({
   weight: ['500', '700'],
@@ -28,9 +32,24 @@ export default function FooterComponent() {
           <Link href={'/contact-us  '}><p>Əlaqə</p></Link>
         </div>
         <div className={styles.left}>
-          <div>Facebook</div>
-          <div>Instagram</div>
-          <div>Linkedin</div>
+          <Link href={'https://www.instagram.com/codeandcare/'}>
+            <div>
+              <Image src={face} alt={'facebook'} />
+              <p>Facebook</p>
+            </div>
+          </Link>
+          <Link href={'https://www.instagram.com/codeandcare/'}>
+            <div>
+              <Image src={insta} alt={'instagram'} />
+              <p>Instagram</p>
+            </div>
+          </Link>
+          <Link href={'https://www.instagram.com/codeandcare/'}>
+            <div>
+              <Image src={linkedin} alt={'linkedin'} />
+              <p>Linkedin</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
