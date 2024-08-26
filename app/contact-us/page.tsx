@@ -1,5 +1,9 @@
+import Contact from "@/shared/components/contact/Contact.component";
+
 export default function ContactUsPage() {
     return (
-        <h1 style={{textAlign: 'center'}}>Elaqe</h1>
+        <>
+            <Contact />
+        </>
     )
 }

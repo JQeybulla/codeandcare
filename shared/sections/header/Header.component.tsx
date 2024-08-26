@@ -21,7 +21,7 @@ export default function HeaderComponent () {
           <Link href='/directions'><p className={`${pathname === '/directions' ? styles.active : ''}`}>Tədris istiqamətləri</p></Link>
           <Link href='/about-us'><p className={`${pathname === '/about-us' ? styles.active : ''}`}>Haqqımızda</p></Link>
           {/*<Link href='/news'><p className={`${pathname === '/news' ? styles.active : ''}`}>Xəbərlər</p></Link>*/}
-          <Link href='/blogs'><p className={`${pathname === '/blogs' ? styles.active : ''}`}>Blog</p></Link>
+          {/*<Link href='/blogs'><p className={`${pathname === '/blogs' ? styles.active : ''}`}>Blog</p></Link>*/}
           <Link href='/contact-us'><p className={`${pathname === '/contact-us' ? styles.active : ''}`}>Əlaqə</p></Link>
           <Link href='/apply'>
               <button>Müraciət et</button>
