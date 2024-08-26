@@ -27,3 +27,33 @@
     }
   }
 }
+
+@media screen and (max-width: 940px){
+  .partners {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      //border: 1px solid black;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 1rem;
+      .partner {
+        margin: 0 auto;
+        width: 90%;
+        padding: 3rem;
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 580px){
+  .partners {
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+      .partner {
+        padding: 5rem;
+      }
+    }
+  }
+}
