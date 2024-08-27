@@ -59,11 +59,54 @@
   }
 }
 
+.mobileHeader {
+  background-color: #191717;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  transform: translateY(-100%);
+  transition: transform 0.7s ease-out;
+
+  button {
+    height: 2rem;
+    width: 6rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+  }
+}
+.open {
+  transform: translateY(0);
+}
+
 @media screen and (min-width: 1400px) {
   .header {
     padding: 0 20%;
   }
-
 }
 
+@media screen and (max-width: 950px) {
+  .header {
+    .logo {
+      img {
+        width: 160px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 866px) {
+  .header {
+    .menu {
+      display: none;
+      background-color: red;
+    }
+  }
+}
 
