@@ -34,7 +34,9 @@ export default function HeaderComponent () {
                       <button>Müraciət et</button>
                   </Link>
               </div>
-              <Hamburger toggled={isOpen} toggle={setOpen}/>
+              <div className={styles.hamburger}>
+                  <Hamburger toggled={isOpen} toggle={setOpen} />
+              </div>
           </div>
           {isOpen && <div className={`${styles.mobileHeader} ${isOpen ? styles.open : ''}`}>
               <Link href='/directions'><p className={`${pathname === '/directions' ? styles.active : ''}`}>Tədris
