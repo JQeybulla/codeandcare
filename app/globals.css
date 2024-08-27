@@ -94,6 +94,7 @@ body {
   /*color: rgb(var(--foreground-rgb));*/
   /*background: linear-gradient(*/
   color: black;
+  background-color: white;
   /*    to bottom,*/
   /*    transparent,*/
   /*    rgb(var(--background-end-rgb))*/
