@@ -69,3 +69,22 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .embla {
+    &__container {
+      .embla__slide {
+        .left {
+          .middle {
+            h1 {
+              font-size: 40px;
+            }
+          }
+        }
+        .right {
+          display: none;
+        }
+      }
+    }
+  }
+}
