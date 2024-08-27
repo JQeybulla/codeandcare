@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function CarouselComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay()]);
   return (
-    <div className='embla' ref={emblaRef}>
+    <div className='embla'>
       <div className='embla__container'>
         <div className="embla__slide">
           <div className="left">
