@@ -105,6 +105,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  outline: none !important;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 
