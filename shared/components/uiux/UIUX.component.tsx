@@ -9,7 +9,7 @@ const exo_2 = Exo_2({
 
 export default function UIUXComponent() {
   return (
-    <div className={styles.frontend}>
+    <div className={styles.uiux}>
       <h1 className={exo_2.className}>UI / UX</h1>
       <p>
         UI / UX təlimi həftədə 2 dəfə, hər dərs minimum 2 saat olmaqla həyata keçirilir.
@@ -18,14 +18,19 @@ export default function UIUXComponent() {
       </p>
       <h3 className={exo_2.className}>Öyrənəcəyiniz texnologiyalar</h3>
       <ul>
-        <li>HTML, CSS</li>
-        <li>JavaScript</li>
-        <li>Başlanğıc Data strukturları və Alqoritmlər</li>
-        <li>Bootstrap</li>
-        <li>SCSS</li>
-        <li>React</li>
-        <li>Next.js</li>
-        <li>Git / Github</li>
+        <li>Figma</li>
+        <li>Tipoqrafiya</li>
+        <li>Rəng nəzəriyyəsi</li>
+        <li>Layout və Grids</li>
+        <li>Auto Layout ilə işləmək</li>
+        <li>Prototip yaratmaq</li>
+        <li>Mobil və web uyğunluq</li>
+        <li>Dizayn sistemləri</li>
+        <li>İstifadəçi təcrübəsi testi</li>
+        <li>İstifadəçi araşdırması</li>
+        <li>İnformasiya Arxitekturası</li>
+        <li>İstifadəçi axını</li>
+        <li>İstifadəçi Mərkəzli Dizayn</li>
       </ul>
       <Link href={'/apply'}>
         <button>Müraciət et</button>

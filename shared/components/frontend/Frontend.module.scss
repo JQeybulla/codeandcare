@@ -33,3 +33,15 @@
     color: black;
   }
 }
+
+@media screen and (max-width: 800px){
+  .frontend {
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .frontend {
+    padding: 3rem 2rem;
+  }
+}

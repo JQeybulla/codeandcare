@@ -33,3 +33,15 @@
     color: black;
   }
 }
+
+@media screen and (max-width: 800px){
+  .backendPython {
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .backendPython {
+    padding: 3rem 2rem;
+  }
+}

@@ -1,4 +1,4 @@
-.frontend {
+.uiux {
   padding: 3rem 10rem;
   h1 {
     margin-bottom: 1rem;
@@ -31,5 +31,17 @@
   button:hover {
     background-color: white;
     color: black;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .uiux{
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .uiux {
+    padding: 3rem 2rem;
   }
 }
