@@ -78,7 +78,10 @@ export default function ApplyFormComponent() {
     await axios.post('https://codeandcarebackend-1.onrender.com/api/apply', submittingObject)
       .then(res => {
         if (res.status === 201) {
-          toast.success('Müraciətiniz qeydə alındı!');
+          toast.success('Müraciətiniz qeydə alındı!', {
+            position: 'bottom-center',
+            duration: 2300
+          });
         }
       })
       .catch(err => {
