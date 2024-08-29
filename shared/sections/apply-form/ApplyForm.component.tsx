@@ -45,22 +45,22 @@ export default function ApplyFormComponent() {
       })
       return;
     }
-    if (!phone) {
+    if (!email) {
       toast.error('Email ünvanınızı daxil edin!', {
         position: 'bottom-center',
         duration: 2300
       })
       return;
     }
-    if (!phoneRegex.test(phone)) {
-      if (!emailRegex.test(email)) {
-        toast.error('Telefon nömrəsinin formatı yanlışdır!', {
-          position: 'bottom-center',
-          duration: 2300
-        })
-      }
-      return;
-    }
+    // if (!phoneRegex.test(phone)) {
+    //   if (!emailRegex.test(email)) {
+    //     toast.error('Telefon nömrəsinin formatı yanlışdır!', {
+    //       position: 'bottom-center',
+    //       duration: 2300
+    //     })
+    //   }
+    //   return;
+    // }
     if (!emailRegex.test(email)) {
       toast.error('Email formatı yanlışdır!', {
         position: 'bottom-center',
