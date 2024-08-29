@@ -3,6 +3,7 @@ import {Exo_2} from "next/font/google";
 import styles from './ApplyForm.module.scss';
 import {useState} from "react";
 import {toast, Toaster} from "react-hot-toast";
+import axios from "axios";
 
 const exo_2 = Exo_2({
   weight: ['500', '700'],
@@ -19,7 +20,7 @@ export default function ApplyFormComponent() {
   const phoneRegex = /^[0-9]*$/;
 
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (!selectedDirection) {
       toast.error('Müraciət etmək istədiyiniz kursu seçin!', {
@@ -73,6 +74,14 @@ export default function ApplyFormComponent() {
       email: email
     }
     console.log(submittingObject);
+
+    await axios.post('https://codeandcarebackend-1.onrender.com/api/apply', submittingObject)
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      })
   }
   return (
     <div className={styles.applyForm} id='apply-form'>
