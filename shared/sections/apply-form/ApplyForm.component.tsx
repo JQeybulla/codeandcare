@@ -19,7 +19,7 @@ export default function ApplyFormComponent() {
   const phoneRegex = /^[0-9]*$/;
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: Event) => {
     e.preventDefault();
     if (!selectedDirection) {
       toast.error('Müraciət etmək istədiyiniz kursu seçin!', {
