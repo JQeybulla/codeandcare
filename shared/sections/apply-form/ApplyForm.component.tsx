@@ -82,6 +82,10 @@ export default function ApplyFormComponent() {
             position: 'bottom-center',
             duration: 2300
           });
+          setSelectedDirection('');
+          setFullname('');
+          setEmail('');
+          setPhone('');
         }
       })
       .catch(err => {
