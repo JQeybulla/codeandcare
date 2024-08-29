@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import HeaderComponent from "@/shared/sections/header/Header.component";
 import FooterComponent from "@/shared/sections/footer/Footer.component";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <Head>
+      <link rel="icon" href="./Loop%20Academy.ico"/>
+      <title>Helloo</title>
+    </Head>
       <body className={inter.className}>
         <HeaderComponent />
         {children}
