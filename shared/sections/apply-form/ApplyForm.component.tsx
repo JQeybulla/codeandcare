@@ -17,7 +17,7 @@ export default function ApplyFormComponent() {
   const [email, setEmail] = useState<string>('');
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const phoneRegex = /^[0-9]*$/;
+  const phoneRegex = /^[0-9\s]*$/;
 
 
   const handleSubmit = async (e: any) => {
