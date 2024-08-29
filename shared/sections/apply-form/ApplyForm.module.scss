@@ -27,6 +27,10 @@
       outline: none;
       background-color: #ffffff;
       color: #4c4c4c;
+      font-weight: bold;
+    }
+    input::placeholder {
+      font-weight: normal;
     }
 
     select {
@@ -38,13 +42,16 @@
       outline: none;
       background-color: #ffffff;
       color: #4c4c4c;
+      font-weight: bold;
       option {
         height: 4px;
         //background-color: #4c4c4c !important;
+        font-weight: bold;
       }
       option:first-child {
         border-radius: 8px !important;
         padding: 20px;
+        font-weight: normal;
       }
     }
     button {
