@@ -96,7 +96,7 @@ export default function ApplyFormComponent() {
     <div className={styles.applyForm} id='apply-form'>
       <h1 className={exo_2.className}>Müraciət formu</h1>
       <Toaster />
-      <form>
+      <form onSubmit={handleSubmit}>
         <select onChange={(e) => setSelectedDirection(e.target.value)}>
           <option value="0">Kursu Secin</option>
           <option value="Frontend">Frontend</option>
@@ -109,7 +109,7 @@ export default function ApplyFormComponent() {
         <input type="text" placeholder='Adınız və soyadınız' value={fullname} onChange={(e) => setFullname(e.target.value)}/>
         <input type="text" placeholder='Telefon nömrəniz' value={phone} onChange={(e) => setPhone(e.target.value)}/>
         <input type="email" placeholder='Email ünvanınız' value={email} onChange={(e) => setEmail(e.target.value)}/>
-        <button type='submit' onClick={handleSubmit}>Göndər</button>
+        <button>Göndər</button>
       </form>
     </div>
   )
