@@ -75,7 +75,7 @@ export default function ApplyFormComponent() {
     }
     console.log(submittingObject);
 
-    await axios.post('http://46.101.246.103:3001/api/apply', submittingObject)
+    await axios.post('https://api.codeandcare.az/api/apply', submittingObject)
       .then(res => {
         if (res.status === 201) {
           toast.success('Müraciətiniz qeydə alındı!', {
