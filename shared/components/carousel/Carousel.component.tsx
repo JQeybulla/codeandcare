@@ -2,9 +2,12 @@
 import useEmblaCarousel from "embla-carousel-react";
 import './Carousel.component.scss';
 import Autoplay from "embla-carousel-autoplay";
-import carouselImage from '../../../public/images/carousel/Frame 12.svg';
+import mainImage from './../../../public/mainIcon.svg';
+import grad1 from './../../../public/grad1.svg';
+import grad2 from './../../../public/grad2.svg';
 import Image from "next/image";
 import Link from "next/link";
+import {inspect} from "util";
 
 export default function CarouselComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay()]);
@@ -21,7 +24,9 @@ export default function CarouselComponent() {
             </div>
           </div>
           <div className="right">
-            <Image src={carouselImage} alt={'carousel'} />
+            <Image src={mainImage} alt={'carousel'} />
+            <Image className='grad1' src={grad1} alt={'carousel'} />
+            <Image className='grad2' src={grad2} alt={'carousel'} />
           </div>
         </div>
         {/*<div className="embla__slide">*/}
